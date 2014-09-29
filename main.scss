@@ -1,7 +1,14 @@
 @import '_grid_layout';
 @import '_conditionals';
+@import '_colours';
 @import '_typography';
+@import 'design-patterns/_alpha-beta';
 
+$path : "govuk_frontend_toolkit/images/";
+
+.phase-banner  {
+  @include phase-banner(alpha);
+}
 
 .outer-block {
   @include outer-block;
@@ -20,19 +27,11 @@ h2 {
 }
 
 body {
-  @include core-19();
+  @include copy-19($tabular-numbers: true);
 }
 
-.lede, .lead {
-  @include core-24;
-  margin-top: 5px/24px * 1em;
-  margin-bottom: 20px/24px * 1em;
+a[rel="external"] {
+  @include external-link-default;
+  @include external-link-19;
 }
-
-p {
-  margin-top: 5px/19px * 1em;
-  margin-bottom: 20px/19px * 1em;
-}
-
-
 
