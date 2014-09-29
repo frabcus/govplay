@@ -1,0 +1,38 @@
+@import '_grid_layout';
+@import '_conditionals';
+@import '_typography';
+
+
+.outer-block {
+  @include outer-block;
+}
+
+.inner-block {
+  @include inner-block;
+}
+
+h1 {
+  @include bold-48;
+}
+
+h2 {
+  @include bold-27;
+}
+
+body {
+  @include core-19();
+}
+
+.lede, .lead {
+  @include core-24;
+  margin-top: 5px/24px * 1em;
+  margin-bottom: 20px/24px * 1em;
+}
+
+p {
+  margin-top: 5px/19px * 1em;
+  margin-bottom: 20px/19px * 1em;
+}
+
+
+
