@@ -1,12 +1,13 @@
 Template
 ========
 
-Cyan bar above header
 Content in centre
 
 Pin modules
 
 Check how font works
+
+Cookie message
 
 Toolkit
 =======

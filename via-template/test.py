@@ -30,7 +30,11 @@ params = {
     </nav>
   </div>
 </div>
-"""
+""",
+
+  "cookieMessage": """
+  <p>GOV.UK uses cookies to make the site simpler. <a href="http://gov.uk/help/cookies">Find out more about cookies</a></p>
+  """
 }
 
 html = pystache.render(template, params)
