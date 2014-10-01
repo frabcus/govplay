@@ -21,7 +21,7 @@ params = {
   <div class="content">
     <nav id="proposition-menu" role="navigation">
       <a href="/" id="proposition-name">Civil Service Survey</a>
-      <span class="alpha-tag">Alpha</span>
+      <span class="phase-tag">Alpha</span>
       <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
       <ul id="proposition-links">
         <li><a href="#">Login</a></li>
@@ -34,10 +34,12 @@ params = {
 
   "cookieMessage": """
   <p>GOV.UK uses cookies to make the site simpler. <a href="http://gov.uk/help/cookies">Find out more about cookies</a></p>
-  """
+  """,
+
+  "head": """<link href="stylesheets/survey.css" media="all" rel="stylesheet" type="text/css">"""
 }
 
 html = pystache.render(template, params)
-outfile = open("out.html", "w")
+outfile = open("index.html", "w")
 outfile.write(html)
 

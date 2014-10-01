@@ -2,12 +2,18 @@ Template
 ========
 
 Content in centre
+Bootstrap?
+Alpha logo
 
 Pin modules
-
 Check how font works
+Cookie message wording / presence
 
-Cookie message
+Check on IE7 etc.
+Check scaling on mobile
+
+Read charts page on design manual
+
 
 Toolkit
 =======

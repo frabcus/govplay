@@ -4,3 +4,6 @@
 [submodule "via-toolkit/govuk_frontend_toolkit"]
 	path = via-toolkit/govuk_frontend_toolkit
 	url = https://github.com/alphagov/govuk_frontend_toolkit.git
+[submodule "via-template/govuk_frontend_toolkit"]
+	path = via-template/govuk_frontend_toolkit
+	url = https://github.com/alphagov/govuk_frontend_toolkit.git
