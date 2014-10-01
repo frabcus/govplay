@@ -10,7 +10,13 @@ params = {
     "content": """
         <div id="wrapper">
         <main id="content">
-       <p> This is the content :)</p>
+       <h1> Header </h2>
+       <p class="lead"> This is the content :)</p>
+
+       <h2> Subheader </h2>
+
+       <p> And some more. </p>
+
        </main>
        </div>
     """,

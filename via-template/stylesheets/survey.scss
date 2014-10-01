@@ -28,6 +28,7 @@ $path : "govuk_frontend_toolkit/images/";
   @include box-sizing(border-box);
   display: block;
   margin: 0 auto;
+  margin-top: 1.5em;
   max-width: 1020px;
   padding: 15px;
   // Opera requires display:block for max-width to work...
@@ -36,5 +37,58 @@ $path : "govuk_frontend_toolkit/images/";
   }
 }
 
+/* Typography */
 
+body {
+  @include core-19();
+}
+
+.lede, .lead {
+  @include core-24;
+  margin-top: 5px/24px * 1em;
+  margin-bottom: 20px/24px * 1em;
+}
+
+p {
+  margin-top: 5px/19px * 1em;
+  margin-bottom: 20px/19px * 1em;
+}
+
+h1 {
+  @include bold-48;
+  span {
+    @include core-27;
+    color: $secondary-text-colour;
+    display: block;
+    margin-bottom: 5px/27px * 1em;
+  }
+  margin-top: 30px/48px * 1em;
+  margin-bottom: 45px/48px * 1em;
+}
+
+h2 {
+  @include bold-24;
+  margin-top: 45px/24px * 1em;
+  margin-bottom: 15px/24px * 1em;
+}
+
+h3 {
+  @include bold-19;
+  margin-top: 20px/19px * 1em;
+}
+
+// Remove margin-top from first h1-3 in any section/div/aside/main
+section, aside, div, main {
+  h1, h2, h3, p {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// External link style
+a[rel="external"] {
+  @include external-link-default;
+  @include external-link-19;
+}
 
